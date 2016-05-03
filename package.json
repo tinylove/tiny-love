@@ -3,15 +3,15 @@
   "version": "1.0.1",
   "private": true,
   "dependencies": {
-    "async": "^1.5.2",
-    "dotenv": "^2.0.0",
-    "gulp-sass": "^2.0.1",
+    "async": "1.5.2",
+    "dotenv": "2.0.0",
+    "gulp-sass": "2.2.x",
     "keystone": "0.3.13",
     "node-sass": "3.3.3",
     "node-sass-middleware": "0.9.6",
-    "querystring": "^0.2.0",
-    "request": "^2.57.0",
-    "underscore": "^1.8.0"
+    "querystring": "0.2.0",
+    "request": "2.69.0",
+    "underscore": "1.8.3"
   },
   "devDependencies": {
     "browser-sync": "^2.7.12",
