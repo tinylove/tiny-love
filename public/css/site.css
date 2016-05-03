@@ -280,7 +280,23 @@ input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */ 
+  margin-top: 10px;
+  margin-left: 2%;
+  margin-right: 5px;
+  /* margin sizing to space radio buttons that are on the same row */}
+
+input#friendReferral {
+    width: 65%;
+    display: inline;
+    margin: 10px 0px 10px 10px;
+}
+
+input#otherReferral {
+    width: 70%;
+    display: inline;
+    margin-left: 10px;
+}
 
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
