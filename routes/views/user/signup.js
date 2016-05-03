@@ -23,15 +23,25 @@ exports = module.exports = function(req, res) {
 	locals.site_key = process.env.RECAPTCHA_SITE_KEY;
 
 	function createUser(next) {
+		var referral = req.body.referralType;
+		if( referral === 'Friend' ) {
+			referral = 'Friend: ' + req.body.referringFriend;
+		}
+		else if ( referral === 'Other' ) {
+			referral = 'Other: ' + req.body.referringOther;
+		}
 		var userData = {
 			name: {
 				first: req.body.firstname,
 				last: req.body.lastname
 			},
+			phone: req.body.phone,
 			email: req.body.email,
+			location: req.body.local,
 			password: req.body.password,
+			contactType: req.body.contactType,
 			createdAt: Date.now(),
-
+			referralType: referral,
 			website: req.body.website
 		};
 
@@ -98,7 +108,7 @@ exports = module.exports = function(req, res) {
 	view.on('post', { action: 'signup' }, function(next) {
 
 		if (!req.body.firstname || !req.body.lastname || !req.body.email || !req.body.password) {
-			req.flash('error', 'Please enter a name, email and password.');
+			req.flash('error', 'Please enter a name, email, and password.');
 			return next();
 		}
 

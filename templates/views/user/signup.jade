@@ -18,14 +18,50 @@ block content
 				label Last Name
 				input(type='text', name='lastname', value=formData['lastname']).form-control
 
+			.form-group
+				label Phone Number (optional)
+				input(type='text', name='phone', value=formData['phone']).form-control
+
 			.form-group(class=validationErrors.email ? 'has-error' : null)
-				label Email
+				label Email (required)
 				input(type='email', name='email', value=formData['email']).form-control
 
 			.form-group(class=validationErrors.password ? 'has-error' : null)
 				label Password
 				input(type='password', name='password', value=formData['password']).form-control
-    
+			
+			.form-group
+				label Location (City, State, Country)
+				input(type='text', name='local', value=formData['local']).form-control
+
+			.form-group
+				label Best way to contact you?
+				input(type='radio', name='contactType', value='Email', checked).form-control 
+				| Email
+				input(type='radio', name='contactType', value='Phone').form-control 
+				| Phone
+				input(type='radio', name='contactType', value='Facebook').form-control 
+				| Facebook
+
+			.form-group
+				label How did you hear about us?
+				input(type='radio', name='referralType', value='Google').form-control
+				| Google
+				input(type='radio', name='referralType', value='Facebook').form-control
+				| Facebook
+				input(type='radio', name='referralType', value='Instagram').form-control
+				| Instagram
+				input(type='radio', name='referralType', value='Twitter').form-control
+				| Twitter
+				br
+				input(type='radio', name='referralType', value='Friend').form-control
+				| A Friend 
+				input(type='text', id='friendReferral', name='referringFriend', value=formData['referringFriend']).form-control
+				br
+				input(type='radio', name='referralType', value='Other').form-control
+				| Other 
+				input(type='text', id='otherReferral', name='referringOther', value=formData['referringOther']).form-control
+
 			if !noCaptcha
 				div(class="form-group g-recaptcha", data-sitekey=site_key)
 
