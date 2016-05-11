@@ -32,7 +32,7 @@ block content
                         li: a(href='/keystone/signout') Sign Out
                     else
                         li: a.button.button--teal(href='/user/signin') Sign In
-
+                    
                 h2.introduction__headline 
                   | Imagine being there <br />
                   | for #[em that] moment
@@ -129,19 +129,25 @@ block content
     .section.section--white
         .cost
             h2 Program Cost
-            h3 One-time charge of #[span.price $322.00]
+            h3 One-time charge of #[span.price $322.00] 
+            //$460.00
             p While there are no fees for things like doula training organizations, packet fees, application fees, membership fees or certification renewals we do require that you purchase the books on the required reading list and highly recommend that you purchase The Labor Progress Handbook. You can find these books new or used at a local bookstore or at many online retailers.
             p Since all materials are available immediately online there are no refunds offered after you have purchased the program.
             p Payments can be made online using your credit card or your PayPal account.
             if !user
               a(href="/user/signup").button.button--red Sign up
             
-
-    if !user
-      .section.section--tan
-          .share-the-love
-              h2 Spread the Word
-              h3 Know someone who would like to be a doula?
-              p Kindly share Tiny Love! We genuinely thank you in advance.
-              // Go to www.addthis.com/dashboard to customize your tools
-              .addthis_sharing_toolbox
+    .section.section--tan
+        .share-the-love
+            h2 Spread the Word
+            h3 Know someone who would like to be a doula?
+            p Kindly share Tiny Love! We genuinely thank you in advance.
+            div.social-links-container
+                a(href="http://www.facebook.com/tldoulatraining/") 
+                  img.social-links(src="images/facebook.png", alt="Facebook Page")
+                a(href="http://www.instagram.com/tinylovedoulas/") 
+                  img.social-links(src="images/instagram.png", alt="Instagram Page")
+                a(href="http://www.pinterest.com/tinylovedoulas/") 
+                  img.social-links(src="images/pinterest.png", alt="Pinterest Page")
+                a(href="http://twitter.com/tinylovedoula") 
+                  img.social-links(src="images/twitter.png", alt="Twitter Page")
