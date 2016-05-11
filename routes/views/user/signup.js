@@ -42,6 +42,7 @@ exports = module.exports = function(req, res) {
 			contactType: req.body.contactType,
 			createdAt: Date.now(),
 			referralType: referral,
+			referralList: req.body.referralList,
 			website: req.body.website
 		};
 
@@ -107,8 +108,8 @@ exports = module.exports = function(req, res) {
 
 	view.on('post', { action: 'signup' }, function(next) {
 
-		if (!req.body.firstname || !req.body.lastname || !req.body.email || !req.body.password) {
-			req.flash('error', 'Please enter a name, email, and password.');
+		if (!req.body.firstname || !req.body.lastname || !req.body.email || !req.body.password || !req.body.local) {
+			req.flash('error', 'Please enter a name, email, location, and password.');
 			return next();
 		}
 

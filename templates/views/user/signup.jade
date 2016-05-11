@@ -62,6 +62,11 @@ block content
 				| Other 
 				input(type='text', id='otherReferral', name='referringOther', value=formData['referringOther']).form-control
 
+			.form-group
+				label Do you want to join Tiny Love's referral list?
+				input(type='checkbox', name='referralList').form-control
+				| Sure, sign me up!
+
 			if !noCaptcha
 				div(class="form-group g-recaptcha", data-sitekey=site_key)
 

@@ -16,6 +16,7 @@ User.add({
     location: { type: Types.Text, initial: false, required: false },
 	contactType: { type: Types.Text, initial: false, required: false },
 	referralType: { type: Types.Text, initial: false, required: false },
+	referralList: { type: Types.Boolean, initial: false, required: false },
 	payed: { type: Types.Boolean, initial: false, required: false },
     completedLessons: { type: Types.Relationship, ref: 'Lesson', many: true },
     oneTimeLoginKey: { type: Types.Number, required: false, index: false },
