@@ -21,7 +21,7 @@ block content
                 //- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
                 //- ... or completely change this header to suit your design.
 
-                a.introduction--logo-white(href='/') Tiny Love
+                img.introduction__image(src="images/tiny-love-logo-full-white-thick-with-shadow.png")
                 //- ul
                 //-     each link in navLinks
                 //-         li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
@@ -151,3 +151,12 @@ block content
                   img.social-links(src="images/pinterest.png", alt="Pinterest Page")
                 a(href="http://twitter.com/tinylovedoula") 
                   img.social-links(src="images/twitter.png", alt="Twitter Page")
+
+//    if !user
+  //    .section.section--tan
+    //      .share-the-love
+      //        h2 Spread the Word
+      //        h3 Know someone who would like to be a doula?
+      //        p Kindly share Tiny Love! We genuinely thank you in advance.
+              // Go to www.addthis.com/dashboard to customize your tools
+      //        .addthis_sharing_toolbox

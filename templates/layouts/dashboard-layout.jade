@@ -17,20 +17,24 @@ html
             li
               a(href="/user/resources", data-tooltip="Resources")
                 span.hide-text Resources
-                i.icon-ecommerce_bag
+                //i.icon-ecommerce_bag
+                img.dashboard-icon(src="/images/resources-icon.png")
             li
               a(href="/user/account", data-tooltip="My Account") 
                 span.hide-text My Account 
-                i.icon-basic_lock_open
+                //i.icon-basic_lock_open
+                img.dashboard-icon(src="/images/account-icon.png")
             li
               a(href='/keystone/signout', data-tooltip="Sign Out") 
                 span.hide-text Sign Out
-                i.icon-basic_ban
+                //i.icon-basic_ban
+                img.dashboard-icon(src="/images/logout-icon.png")
             if user && user.canAccessKeystone
               li
                 a(href='/keystone', data-tooltip="Admin")
                   span.hide-text Keystone Admin
-                  i.icon-arrows_hamburger
+                  //i.icon-arrows_hamburger
+                  img.dashboard-icon(src="/images/admin-icon.png")
       
         main.user-content(role="main")
             
