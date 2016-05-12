@@ -1088,7 +1088,7 @@ body.home {
   background-size: cover;
   background-position: center center;
   padding: 9em 1em 4em 1em;
-  height: 96%;
+  height: 100%;
   min-height: 600px; }
   @media only screen and (max-width: 480px) {
     .section--first {
@@ -1108,7 +1108,7 @@ body.home {
         margin: 1.5em 0; } }
 
 .introduction__image {
-  margin-top: -75px; 
+  margin-top: -50px; 
 }
 
 .introduction__access {
@@ -1160,7 +1160,7 @@ body.home {
     .scroll-instructions {
       padding: 1em; } }
   .scroll-instructions i {
-    font-size: 2.3em; }
+    font-size: 1.3em; }
   .scroll-instructions.scroll-instructions--hidden {
     opacity: 0;
     filter: alpha(opacity=0);
