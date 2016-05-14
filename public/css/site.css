@@ -1107,6 +1107,28 @@ body.home {
       .introduction .main-cta {
         margin: 1.5em 0; } }
 
+
+.introduction--logo-white {
+  display: block;
+  height: 86px;
+  width: 190px;
+  text-indent: -5000px;
+  background-image: url("../../images/tiny-love-logo-full-white-thick.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 1em;
+  left: 1em; }
+  @media only screen and (max-width: 40em) {
+    .introduction--logo-white {
+      height: 70px;
+      width: 160px; } }
+  @media only screen and (max-width: 320px) {
+    .introduction--logo-white {
+      height: 60px;
+      width: 140px; } }
+
+
 .introduction__image {
   margin-top: -50px; 
 }
