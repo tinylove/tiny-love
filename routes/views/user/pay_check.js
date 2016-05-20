@@ -30,7 +30,7 @@ exports = module.exports = function(req, res) {
 	console.log('postreq', postreq);
 
 	new keystone.Email('payment').send({
-		to: 'mark.bradshaw@gmail.com',
+		to: 'tinylovedoulas.helpdesk@gmail.com',
 		from: {
 			name: 'Tiny Love',
 			email: 'tinylove@beadoula.com'
@@ -62,7 +62,7 @@ exports = module.exports = function(req, res) {
 		console.log('got back', response.statusCode, body);
 
 		new keystone.Email('payment').send({
-			to: 'mark.bradshaw@gmail.com',
+			to: 'tinylovedoulas.helpdesk@gmail.com',
 			from: {
 				name: 'Tiny Love',
 				email: 'tinylove@beadoula.com'

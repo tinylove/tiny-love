@@ -280,23 +280,7 @@ input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ 
-  margin-top: 10px;
-  margin-left: 2%;
-  margin-right: 5px;
-  /* margin sizing to space radio buttons that are on the same row */}
-
-input#friendReferral {
-    width: 65%;
-    display: inline;
-    margin: 10px 0px 10px 10px;
-}
-
-input#otherReferral {
-    width: 70%;
-    display: inline;
-    margin-left: 10px;
-}
+  /* 2 */ }
 
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
@@ -446,11 +430,6 @@ body {
   src: url("/iconfont/fonts/ionicons.eot?v=1.0.0#iefix") format("embedded-opentype"), url("/iconfont/fonts/ionicons.ttf?v=1.0.0") format("truetype"), url("/iconfont/fonts/ionicons.woff?v=1.0.0") format("woff"), url("/iconfont/fonts/ionicons.svg?v=1.0.0#Ionicons") format("svg");
   font-weight: normal;
   font-style: normal; }
-
-.dashboard-icon
-{
-  vertical-align: middle;
-}
 
 .ion, .tinylove-linea,
 .icon-arrows_check:before,
@@ -825,14 +804,6 @@ html.remodal-is-locked {
 img {
   max-width: 100%; }
 
-.social-links-container a{
-  text-decoration: none;
-}
-
-.social-links {
-  height: 30px;
-}
-
 .image-rounded {
   display: block;
   border-radius: 500px;
@@ -1107,7 +1078,6 @@ body.home {
       .introduction .main-cta {
         margin: 1.5em 0; } }
 
-
 .introduction--logo-white {
   display: block;
   height: 86px;
@@ -1127,11 +1097,6 @@ body.home {
     .introduction--logo-white {
       height: 60px;
       width: 140px; } }
-
-
-.introduction__image {
-  margin-top: -50px; 
-}
 
 .introduction__access {
   position: absolute;
