@@ -804,14 +804,6 @@ html.remodal-is-locked {
 img {
   max-width: 100%; }
 
-.social-links-container a {
-  text-decoration: none;
-}
-
-.social-links {
-  height: 30px;
-}
-
 .image-rounded {
   display: block;
   border-radius: 500px;
@@ -1062,12 +1054,12 @@ body.home {
     color: #ee6556; }
 
 .section--first {
-  background-image: url("../../images/home-flower-darker.jpg");
+  background-image: url("../../images/home-background-birth.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 9em 1em 4em 1em;
-  height: 96%;
+  height: 100%;
   min-height: 600px; }
   @media only screen and (max-width: 480px) {
     .section--first {
