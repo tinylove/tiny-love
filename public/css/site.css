@@ -804,6 +804,15 @@ html.remodal-is-locked {
 img {
   max-width: 100%; }
 
+.social-links-container a {
+  text-decoration: none;
+}
+
+.social-links {
+  height: 30px;
+}
+
+
 .image-rounded {
   display: block;
   border-radius: 500px;
