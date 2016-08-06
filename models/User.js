@@ -18,7 +18,9 @@ User.add({
 	referralType: { type: Types.Text, initial: false, required: false },
 	referralList: { type: Types.Boolean, initial: false, required: false },
 	payed: { type: Types.Boolean, initial: false, required: false },
+	amountPaid: { type: Types.Text, initial: false, required: false },
     completedLessons: { type: Types.Relationship, ref: 'Lesson', many: true },
+    certified: { type: Types.Boolean, initial: false, required: false },
     oneTimeLoginKey: { type: Types.Number, required: false, index: false },
     surveyAnswer: { type: Types.Html, wysiwyg: true, height: 400 },
     createdAt: { type: Types.Date, initial: Date.now() },
@@ -45,5 +47,5 @@ User.schema.virtual('canAccessKeystone').get(function() {
  * Registration
  */
 
-User.defaultColumns = 'name, email, isAdmin, payed, createdAt';
+User.defaultColumns = 'name, email, isAdmin, payed, certified, createdAt';
 User.register();
