@@ -26,6 +26,10 @@ block content
 				label Email (required)
 				input(type='email', name='email', value=formData['email']).form-control
 
+			.form-group(class=validationErrors.email ? 'has-error' : null)
+				label Payer's Email (if different)
+				input(type='email', name='payer', value=formData['payer']).form-control
+
 			.form-group(class=validationErrors.password ? 'has-error' : null)
 				label Password
 				input(type='password', name='password', value=formData['password']).form-control
