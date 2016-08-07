@@ -37,7 +37,7 @@ exports = module.exports = function(req, res) {
 			},
 			phone: req.body.phone,
 			email: req.body.email,
-			payerEmail: (req.body.payer.length > 0) ? req.body.payer : req.body.email,
+			payPalEmail: (req.body.paypal.length > 0) ? req.body.paypal : req.body.email,
 			location: req.body.local,
 			password: req.body.password,
 			contactType: req.body.contactType,

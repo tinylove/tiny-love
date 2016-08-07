@@ -12,7 +12,7 @@ User.add({
 	name: { type: Types.Name, required: true, index: true },
 	phone: { type: Types.Text, required: false },
 	email: { type: Types.Email, initial: true, required: true, index: true },
-	payerEmail: { type: Types.Email, initial: true, required: false, index: true },
+	payPalEmail: { type: Types.Email, initial: true, required: false, index: true },
 	password: { type: Types.Password, initial: true, required: true },
     location: { type: Types.Text, initial: false, required: false },
 	contactType: { type: Types.Text, initial: false, required: false },

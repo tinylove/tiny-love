@@ -27,8 +27,8 @@ block content
 				input(type='email', name='email', value=formData['email']).form-control
 
 			.form-group(class=validationErrors.email ? 'has-error' : null)
-				label Payer's Email (if different)
-				input(type='email', name='payer', value=formData['payer']).form-control
+				label PayPal Email Address (if different from above)
+				input(type='email', name='paypal', value=formData['paypal']).form-control
 
 			.form-group(class=validationErrors.password ? 'has-error' : null)
 				label Password
