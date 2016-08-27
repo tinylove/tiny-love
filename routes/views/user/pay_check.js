@@ -84,7 +84,7 @@ exports = module.exports = function(req, res) {
 
 				keystone.list('User').model.findOne({
 					$or: [
-						{ email: payerEmail },
+						{ payPalEmail: payerEmail },
 						{ _id: req.user._id }
 					]
 				}, function(err, user) {
