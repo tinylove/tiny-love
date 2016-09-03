@@ -1541,6 +1541,15 @@ input[type="checkbox"] {
   vertical-align: middle;
 }
 
+.tiny-friends {
+  height: 125px;
+  margin-left: 20px;
+  padding: 5px;
+  box-shadow: 1px 1px 5px 0px grey;
+  -webkit-box-shadow: 1px 1px 5px 0px grey;
+  -moz-box-shadow: 1px 1px 5px 0px grey;
+}
+
 .completed {
   -webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
