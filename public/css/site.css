@@ -1539,6 +1539,8 @@ input[type="checkbox"] {
     -moz-flex: 1;
     -ms-flex: 1;
     flex: 1; }
+  .user-navigation__ul img {
+    vertical-align: middle; }
 
 .user-navigation__logo-icon {
   width: 45px;
