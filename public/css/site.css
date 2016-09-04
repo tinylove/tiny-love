@@ -804,14 +804,6 @@ html.remodal-is-locked {
 img {
   max-width: 100%; }
 
-.social-links-container a {
-  text-decoration: none;
-}
-
-.social-links {
-  height: 30px;
-}
-
 .image-rounded {
   display: block;
   border-radius: 500px;
@@ -1067,7 +1059,7 @@ body.home {
   background-size: cover;
   background-position: center center;
   padding: 9em 1em 4em 1em;
-  height: 100%;
+  height: 96%;
   min-height: 600px; }
   @media only screen and (max-width: 480px) {
     .section--first {
@@ -1272,6 +1264,22 @@ body.home {
   .bio-teaser img {
     max-width: 180px;
     margin: 0 auto 1em auto; }
+
+.social-links-container {
+  text-decoration: none; }
+  .social-links-container img {
+    height: 30px; }
+  .social-links-container a {
+    text-decoration: none; }
+
+.tiny-friends {
+  height: 125px;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 5px;
+  box-shadow: 1px 1px 5px 0px grey;
+  -webkit-box-shadow: 1px 1px 5px 0px grey;
+  -moz-box-shadow: 1px 1px 5px 0px grey; }
 
 .get-started small {
   display: block;
@@ -1536,19 +1544,6 @@ input[type="checkbox"] {
   width: 45px;
   max-width: none;
   vertical-align: middle; }
-
-.dashboard-icon {
-  vertical-align: middle;
-}
-
-.tiny-friends {
-  height: 125px;
-  margin-left: 20px;
-  padding: 5px;
-  box-shadow: 1px 1px 5px 0px grey;
-  -webkit-box-shadow: 1px 1px 5px 0px grey;
-  -moz-box-shadow: 1px 1px 5px 0px grey;
-}
 
 .completed {
   -webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
